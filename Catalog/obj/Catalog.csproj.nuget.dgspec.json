@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\dev\\moacirsilva-github-dotnet5\\MeuTodo\\MeuTodo.csproj": {}
+    "C:\\dev\\moacirsilva_github_dotnet\\catalog\\Catalog.csproj": {}
   },
   "projects": {
-    "C:\\dev\\moacirsilva-github-dotnet5\\MeuTodo\\MeuTodo.csproj": {
+    "C:\\dev\\moacirsilva_github_dotnet\\catalog\\Catalog.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\moacirsilva-github-dotnet5\\MeuTodo\\MeuTodo.csproj",
-        "projectName": "MeuTodo",
-        "projectPath": "C:\\dev\\moacirsilva-github-dotnet5\\MeuTodo\\MeuTodo.csproj",
+        "projectUniqueName": "C:\\dev\\moacirsilva_github_dotnet\\catalog\\Catalog.csproj",
+        "projectName": "Catalog",
+        "projectPath": "C:\\dev\\moacirsilva_github_dotnet\\catalog\\Catalog.csproj",
         "packagesPath": "C:\\Users\\mopereira\\.nuget\\packages\\",
-        "outputPath": "C:\\dev\\moacirsilva-github-dotnet5\\MeuTodo\\obj\\",
+        "outputPath": "C:\\dev\\moacirsilva_github_dotnet\\catalog\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -21,15 +21,18 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "net7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://tfs.caixaseguros.intranet/CVP/_packaging/NuGet-Private%40Local/nuget/v3/index.json": {},
+          "https://tfs.caixaseguros.intranet/CVP/_packaging/NuGet-Public/nuget/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {}
           }
         },
@@ -40,18 +43,16 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
+            "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
-              "version": "[5.0.17, )"
+              "version": "[7.0.7, )"
             },
-            "Microsoft.EntityFrameworkCore.Sqlite": {
+            "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[5.0.17, )"
+              "version": "[6.5.0, )"
             }
           },
           "imports": [
@@ -60,7 +61,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -72,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }
