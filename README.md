@@ -7,3 +7,5 @@ us-001 - api with lambda expressions in endpoints
 example: app.MapGet("/todoitems", async (TodoDb db) =>
   await db.Todos.ToListAsync());
 
+us-002 - api using mapgroup concepts in endpoints
+
