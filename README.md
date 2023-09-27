@@ -21,4 +21,15 @@ static async Task<IResult> GetAllTodos(TodoDb db)
     return TypedResults.Ok( await db.Todos.ToArrayAsync());
 }
 
+<b>us-004</b> - api using DTO concepts </br>
+example: public TodoItemDTO() {}</br>
+    public TodoItemDTO(Todo todoItem)</br>
+    {</br>
+        (Id, Name, IsComplete) = (todoItem.Id, todoItem.Name, todoItem.IsComplete);</br>
+    }</br>
+    static async Task<IResult> GetAllTodos(TodoDb db)</br>
+    {</br>
+      return TypedResults.Ok( await db.Todos.Select(x => new TodoItemDTO(x)).ToArrayAsync());</br>
+    }
+
 
