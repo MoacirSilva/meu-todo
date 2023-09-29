@@ -1,7 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddDbContext<TodoDb>(opt => opt.UseInMemoryDatabase("TodoList"));
+
+builder.Services.AddCors();
+builder.AddPersistence();
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 var app = builder.Build();
 
@@ -13,6 +15,12 @@ todoItems.MapGet("/{id}",GetTodo);
 todoItems.MapPost("/",CreateTodo);
 todoItems.MapPut("{id}", UpdateTodo);
 todoItems.MapDelete("{id}", DeleteTodo);
+
+var environment = app.Environment;
+
+app
+.UseExceptionHandling(environment)
+.UseAppCors();
 
 app.Run();
 
