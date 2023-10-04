@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\dev\\moacirsilva_github_dotnet\\gameapi\\GameApi.csproj": {}
+    "C:\\dev\\moacirsilva_github_dotnet\\GameApi\\GameApi.csproj": {}
   },
   "projects": {
-    "C:\\dev\\moacirsilva_github_dotnet\\gameapi\\GameApi.csproj": {
+    "C:\\dev\\moacirsilva_github_dotnet\\GameApi\\GameApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\dev\\moacirsilva_github_dotnet\\gameapi\\GameApi.csproj",
+        "projectUniqueName": "C:\\dev\\moacirsilva_github_dotnet\\GameApi\\GameApi.csproj",
         "projectName": "GameApi",
-        "projectPath": "C:\\dev\\moacirsilva_github_dotnet\\gameapi\\GameApi.csproj",
+        "projectPath": "C:\\dev\\moacirsilva_github_dotnet\\GameApi\\GameApi.csproj",
         "packagesPath": "C:\\Users\\mopereira\\.nuget\\packages\\",
-        "outputPath": "C:\\dev\\moacirsilva_github_dotnet\\gameapi\\obj\\",
+        "outputPath": "C:\\dev\\moacirsilva_github_dotnet\\GameApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -45,6 +45,12 @@
           "targetAlias": "net7.0",
           "dependencies": {
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.11, )"
             },

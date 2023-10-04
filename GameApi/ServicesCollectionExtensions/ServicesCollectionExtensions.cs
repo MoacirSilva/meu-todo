@@ -5,7 +5,7 @@ public static class ServicesCollectionExtensions
     public static WebApplicationBuilder AddPersistence (this WebApplicationBuilder builder)
     {
         var connectionString = builder.Configuration.GetConnectionString("SqliteConnectionString")
-         ?? "DataSource = Todo.db";
+         ?? "DataSource = Todos.db";
 
          builder.Services.AddSqlite<TodoDb>(connectionString);
 
